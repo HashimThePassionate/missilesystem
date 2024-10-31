@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Realistic Missile Launch</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="scene" id="scene">
+    <div class="ground" id="ground">
+      <!-- Ground segments for destruction -->
+      <div class="ground-segment segment1"></div>
+      <div class="ground-segment segment2"></div>
+      <div class="ground-segment segment3"></div>
+      <div class="ground-segment segment4"></div>
+      <div class="ground-segment segment5"></div>
+      <div class="ground-segment segment6"></div>
+      <div class="ground-segment segment7"></div>
+      <div class="ground-segment segment8"></div>
+    </div>
     <div class="missile" id="missile">
       <div class="missile-head"></div>
       <div class="missile-body"></div>
@@ -17,8 +28,15 @@
         <div class="flame small"></div>
       </div>
     </div>
-    <button id="launchButton">Launch Missile</button>
+    <div class="explosion" id="explosion"></div>
+    <!-- Debris particles -->
+    <div class="debris" id="debris1"></div>
+    <div class="debris" id="debris2"></div>
+    <div class="debris" id="debris3"></div>
+    <div class="debris" id="debris4"></div>
+    <div class="debris" id="debris5"></div>
   </div>
+  <button id="launchButton">Launch Missile</button>
   <script src="script.js"></script>
 </body>
 </html>
